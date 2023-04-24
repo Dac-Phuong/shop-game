@@ -1,0 +1,121 @@
+.Securitydevices-container h2 {
+  font-size: 33px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  font-weight: 700;
+  padding: 10px 0;
+  margin: 0;
+  color: rgb(8, 76, 204);
+  text-shadow: rgb(42, 102, 215) 1px 1px 1px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.Security-wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  justify-content: space-between;
+}
+.Security-wrap-col {
+  width: calc(33.33% - 10px);
+  border: 1px solid #e4e2e2;
+  margin-bottom: 20px;
+  position: relative;
+}
+.Security-wrap-col-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+.Security-wrap-description h2 {
+  color: rgb(13, 13, 14);
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0;
+  padding-bottom: 5px;
+}
+.Security-wrap-description {
+  display: flex;
+  flex-direction: column;
+  height: 22%;
+  margin-bottom: 15px;
+}
+.Security-social-btn {
+  width: 50%;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.5s;
+  background-color: #4b7ef8;
+  cursor: pointer;
+}
+.Security-social {
+  width: 50%;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.5s;
+  background-color: #4b7ef8;
+  cursor: pointer;
+  margin-top: auto;
+}
+.Security-social-btn-text {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  text-shadow: rgb(4, 41, 110) 1px 1px 1px;
+}
+.Security-social-btn:hover,
+.Security-social:hover {
+  background-color: rgb(9, 85, 226);
+  transform: scale(1.07);
+}
+.Security-wrap-slider img {
+  flex-shrink: 0;
+  object-fit: revert;
+  width: 100%;
+}
+.Security-icon {
+  color: #fff;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  height: 30px;
+  width: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.Security-desciption {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  position: absolute;
+  padding: 10px;
+  transition: 0.5s;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.Security-item-list {
+  display: flex;
+}
+.Security-list-text {
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+  display: block;
+}
