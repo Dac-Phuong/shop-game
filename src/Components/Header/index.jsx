@@ -20,18 +20,22 @@ const Header = () => {
       <div className={fixed ? "header-main fixed" : "header-main"}>
         <div className="header-container">
           <div className="nav-list justify-between">
-            <div>
-              <Link>
-                <img
-                  width="70"
-                  src={require("../../image/logo/logo.png")}
-                  className="attachment-50x50 size-50x50 wp-post-image"
-                  alt=""
-                  decoding="async"
-                  loading="lazy"
-                />
-              </Link>
-            </div>
+            <Link
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              to={"Home"}
+              onClick={closeMenu}
+            >
+              <img
+                src={require("../../image/logo/logo.png")}
+                className="attachment-50x50 size-50x50 wp-post-image"
+                alt=""
+                decoding="async"
+                loading="lazy"
+              />
+            </Link>
             <div className="nav-bar">
               <ul className="nav-item">
                 <li className="nav-item-list">
@@ -80,7 +84,7 @@ const Header = () => {
                     offset={-70}
                     duration={500}
                     className="list-menu text-[15px] font-medium"
-                    to={"/"}
+                    to={"Office"}
                     onClick={closeMenu}
                   >
                     Thiết Bị Văn Phòng

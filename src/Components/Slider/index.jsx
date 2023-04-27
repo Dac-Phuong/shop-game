@@ -1,35 +1,40 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import "./style.css";
-
+import { FaCheck } from "react-icons/fa";
 function Sliders() {
-  const settings = {
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 4000,
-  };
   return (
-    <div>
-      <Slider {...settings} className="w-full">
-        <div className="relative">
-          <div>
-            <img
-              src={require("../../image/banner/background.png")}
-              alt=""
-              decoding="async"
-              loading="lazy"
-              width="100%"
-            />
+    <div className="banner">
+      <div>
+        <img
+          src={require("../../image/banner/banner-hd.png")}
+          alt=""
+          decoding="async"
+          loading="lazy"
+          width="100%"
+          className="h-full"
+        />
+      </div>
+      <div className="banner-title">
+        <h2>CÔNG TY TNHH CÔNG NGHỆ HỒNG DƯƠNG</h2>
+        <div className="pt-[15px]">
+          <h3>Chuyên cung cấp và lắp đặt các loại thiết bị Công Nghệ</h3>
+          <div className="banner-name">
+            <FaCheck className="mr-[10px]" />
+            <p>Thiết bị thông minh</p>
           </div>
-       
+          <div className="banner-name">
+            <FaCheck className="mr-[10px]" />
+            <p>Thiết bị an ninh</p>
+          </div>
+          <div className="banner-name">
+            <FaCheck className="mr-[10px]" />
+            <p>Thiết bị văn phòng</p>
+          </div>
         </div>
-      
-      </Slider>
+        <div className="banner-btn">
+          <a href="https://chat.zalo.me/">LIÊN HỆ TƯ VẤN</a>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,14 +1,22 @@
-import React, { useState } from "react";
-import { BsFillCircleFill } from "react-icons/bs";
-import { AiOutlineClose } from "react-icons/ai";
+import React from "react";
 import Slider from "react-slick";
-import data from "../../data/Security/heading.json";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import {
+  AiOutlineSetting,
+  AiOutlineShake,
+  AiFillRobot,
+  AiFillDollarCircle,
+  AiOutlineBgColors,
+} from "react-icons/ai";
+import { FaStar,FaGlobe,FaChromecast } from "react-icons/fa";
+import { BsBuildingGear,BsFillShieldLockFill } from "react-icons/bs";
 import products from "../../data/Security/product.json";
 import "./style.css";
 import { NextArrow, PrevArrow } from "../../Components/NextSlider";
+import { Link } from "react-scroll";
 
 function Securitydevices() {
-  const [check, setCheck] = useState(null);
   const settings = {
     dots: false,
     speed: 500,
@@ -18,99 +26,166 @@ function Securitydevices() {
     prevArrow: <PrevArrow />,
     responsive: [
       {
-          breakpoint: 1000,
-          settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-
-          }
-      }, {
-          breakpoint: 600,
-          settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              autoplay: true,
-              autoplaySpeed: 2000,
-          }
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
       },
-  ]
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        },
+      },
+    ],
   };
-
   return (
     <div className="Security-container" id="Security">
-      <div className="main-top-heading mb-[50px]">
-        <div className="main-top-title mt-[10px]">
-          <h2>THIẾT BỊ AN NINH</h2>
-          <div className="main-heading-line" />
-        </div>
-        <div className="main-wrap">
-          <div className="main-top-right">
-            <div>
-              <h3>Thiết bị an ninh là gì?</h3>
-              <div className="right-heading">
-                <div>
-                  <BsFillCircleFill
-                    color="#2A2388"
-                    className="text-[9px] mt-[8px] mr-[5px]"
-                  />
+     <div className="main-top-heading">
+          <div className="main-top-title ">
+            <h2>THIẾT BỊ AN NING</h2>
+            <div className="main-heading-line" />
+          </div>
+          <div className="main-wrap">
+            <div className="main-top-right">
+              <div>
+                <h3 className="mb-[10px]">Ưu Điểm Vượt Trội</h3>
+                <div className="right-heading mt-[10px]">
+                  <div className="right-heading-1">
+                    <div className="right-heading-icon">
+                      <FaStar
+                        color="#2A2388"
+                        className="text-[24px] mr-[5px]"
+                      />
+                    </div>
+                    <p>Chất lượng sản phẩm tốt</p>
+                  </div>
+                  <div className="right-heading-1">
+                    <div className="right-heading-icon">
+                      <AiOutlineSetting
+                        color="#2A2388"
+                        className="text-[24px] mr-[5px]"
+                      />
+                    </div>
+                    <p>Hệ thống camera lắp đặt vô cùng dễ dàng</p>
+                  </div>
                 </div>
-                <p>
-                  Thiết bị an ninh là các thiết bị có chức năng báo trộm, báo
-                  động hoặc cảnh báo hoả hoạn, cháy nổ… Khi xảy ra sự cố, các
-                  thiết bị an ninh lập tức phát ra các âm thanh báo động và thực
-                  hiện cuộc gọi khẩn cấp
-                </p>
+                <div className="right-heading mt-[10px]">
+                  <div className="right-heading-1">
+                    <div className="right-heading-icon">
+                      <FaChromecast
+                        color="#2A2388"
+                        className="text-[24px] mr-[3px]"
+                      />
+                    </div>
+                    <p>Camera còn có hỗ trợ dịch vụ DDNS</p>
+                  </div>
+                  <div className="right-heading-1">
+                    <div className="right-heading-icon">
+                      <FaGlobe
+                        color="#2A2388"
+                        className="text-[24px] mr-[3px]"
+                      />
+                    </div>
+                    <p>Dễ dàng truy cập web camera của bạn qua Internet</p>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-4">
+                <h3>Tính Năng Chính</h3>
+                <div className="main-top-item">
+                  <div className="right-heading mt-[10px]">
+                    <div className="w-full">
+                      <div className="right-heading-1">
+                        <div className="right-heading-icon bg-[#2A2388]">
+                          <AiFillDollarCircle
+                            color="#fff"
+                            className="text-[24px] mr-[5px]"
+                          />
+                        </div>
+                        <p>Tiết kiệm điện năng</p>
+                      </div>
+                      <div className="right-heading-1 mt-2">
+                        <div className="right-heading-icon bg-[#2A2388]">
+                          <AiOutlineBgColors
+                            color="#fff"
+                            className="text-[24px] mr-[5px]"
+                          />
+                        </div>
+                        <p>Đa chức năng</p>
+                      </div>
+                      <div className="right-heading-1 mt-2">
+                        <div className="right-heading-icon bg-[#2A2388]">
+                          <AiOutlineShake
+                            color="#fff"
+                            className="text-[24px] mr-[5px]"
+                          />
+                        </div>
+                        <p>Kết nối thông minh</p>
+                      </div>
+                      <div className="right-heading-1 mt-2">
+                        <div className="right-heading-icon bg-[#2A2388]">
+                          <AiFillRobot
+                            color="#fff"
+                            className="text-[24px] mr-[5px]"
+                          />
+                        </div>
+                        <p>Bảo vệ an toàn</p>
+                      </div>
+                    </div>
+                    <div className="w-full">
+                      <div className="right-heading-1 mt-2">
+                        <div className="right-heading-icon bg-[#2A2388]">
+                          <BsBuildingGear
+                            color="#fff"
+                            className="text-[24px] mr-[5px]"
+                          />
+                        </div>
+                        <p>Khả năng hoạt động ổn định</p>
+                      </div>
+                      <div className="right-heading-1 mt-2">
+                        <div className="right-heading-icon bg-[#2A2388]">
+                          <BsFillShieldLockFill
+                            color="#fff"
+                            className="text-[24px] mr-[5px]"
+                          />
+                        </div>
+                        <p> Bảo đảm an toàn cho ngôi nhà</p>
+                      </div>
+                      <div className="right-heading-1 mt-2">
+                        <div className="right-heading-icon bg-[#2A2388]">
+                          <AiFillDollarCircle
+                            color="#fff"
+                            className="text-[24px] mr-[5px]"
+                          />
+                        </div>
+                        <p>Chống ngược sáng rất tốt</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="social-btn">
+                <a className="social-btn-text" href="https://chat.zalo.me/">
+                  Liên hệ tư vấn
+                </a>
               </div>
             </div>
-            <div>
-              <h3>Chức năng của thiết bị an ninh</h3>
-              <ul className="main-top-item">
-                {data.map((item) => {
-                  return (
-                    <li key={item.id} className="main-top-list">
-                      <BsFillCircleFill
-                        color="#2A2388"
-                        className="text-[10px] mt-[8px] mr-[10px]"
-                      />
-                      <p>{item.name}</p>
-                    </li>
-                  );
-                })}
-              </ul>
+            <div className="main-wrap-left">
+              <Link to={"Home"} className="cursor-pointer">
+                <img
+                  className="main__row-banner"
+                  alt=""
+                  src={require("../../image/banner/thiet-bi-an-ning.jpg")}
+                />
+              </Link>
             </div>
-            <div>
-              <h3>Lợi ích tuyệt vời của thiết bị an ninh</h3>
-              <ul className="main-top-item">
-                {data.map((item) => {
-                  return (
-                    <li key={item.id} className="main-top-list">
-                      <BsFillCircleFill
-                        color="#2A2388"
-                        className="text-[10px]  mt-[8px] mr-[10px]"
-                      />
-                      <p>{item.title}</p>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-            <div className="social-btn">
-              <a className="social-btn-text" href="https://chat.zalo.me/">
-                Liên hệ tư vấn
-              </a>
-            </div>
-          </div>
-          <div className="main-wrap-left">
-            <a href="/">
-              <img
-                className="main__row-banner"
-                alt=""
-                src={require("../../image/banner/thiet-bi-an-ning.jpg")}
-              />
-            </a>
           </div>
         </div>
-      </div>
       <div className="w-full mt-[20px] mb-[30px]">
         <div className="main-heading relative">
           <h2 className="main-heading-col leading-loose">
@@ -128,7 +203,7 @@ function Securitydevices() {
                     return (
                       <img
                         key={index}
-                        className="h-[320px] w-full"
+                        className="object-cover w-full"
                         alt=""
                         src={image}
                       />
@@ -137,58 +212,38 @@ function Securitydevices() {
                 </Slider>
               </div>
               <div className="Security-wrap-description mt-[10px] pl-[15px] pr-[15px]">
-                <h2 className="text-black mb-auto">{item.name}</h2>
-                <div className="Security-wrap-col-info">
-                  <div className="Security-wrap-col-price">
-                    <p className="text-red-900 text-[16px] font-bold">
-                      {item.price}
-                    </p>
-                    <del className="text-gray-500 text-[14px] ml-2">
-                      {item.defautlprice}
-                    </del>
-                  </div>
-                  <div
-                    className="Security-social-btn"
-                    onClick={() => setCheck(item.id)}
-                  >
-                    <p className="Security-social-btn-text">Xem Chi Tiết</p>
-                  </div>
+                <div className="relative">
+                  <h2 className="Security-wrap-heading">THÔNG SỐ KỸ THUẬT</h2>
                 </div>
-              </div>
-              {check == item.id ? (
-                <div className="Security-desciption">
-                  <div className="h-2/3">
-                    <h2>Mô Tả Sản Phẩm</h2>
-                    <button
-                      className="Security-icon"
-                      onClick={() => setCheck(null)}
-                    >
-                      <AiOutlineClose size={20} />
-                    </button>
-                    {item.description.map((item) => {
+                <div className="Security-wrap-col-info">
+                  <div className="Security-specifications">
+                    {item.specifications.map((list,index) => {
                       return (
-                        <ul key={item.id} className="Security-item">
-                          <li className="Security-item-list">
-                            <BsFillCircleFill
-                              color="#fff"
-                              className="text-[10px]  mt-[8px] mr-[10px]"
-                            />
-                            <p className="Security-list-text">{item}</p>
-                          </li>
+                        <ul key={index} className="Security-wrap-item">
+                          <li>{list}</li>
                         </ul>
                       );
                     })}
                   </div>
-                  <div className="Security-social ">
-                    <a
-                      className="Security-social-btn-text"
-                      href="https://www.facebook.com/CAMERAHAIDANGTN"
-                    >
-                      Liên hệ ngay
-                    </a>
+                  <div className="Security-specifications">
+                    {item.description.map((item,index) => {
+                      return (
+                        <ul key={index} className="Security-item">
+                          <li className="Security-item-list">{item}</li>
+                        </ul>
+                      );
+                    })}
                   </div>
                 </div>
-              ) : null}
+                <div className="Security-social ">
+                  <a
+                    className="Security-social-btn-text"
+                    href="https://www.facebook.com/CAMERAHAIDANGTN"
+                  >
+                    Liên hệ ngay
+                  </a>
+                </div>
+              </div>
             </div>
           );
         })}

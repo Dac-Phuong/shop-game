@@ -9,7 +9,6 @@ import { FiUsers, FiPhone, FiGlobe,FiLock } from "react-icons/fi";
 import { BiNotepad } from "react-icons/bi";
 import { BsFillChatRightDotsFill } from "react-icons/bs";
 import "./style.css";
-import { Link } from "react-router-dom";
 
 function Footer() {
   return (
