@@ -31,139 +31,31 @@ function Smartdevice() {
             <h2>THIẾT BỊ THÔNG MINH</h2>
             <div className="main-heading-line" />
           </div>
-          <div className="main-wrap">
-            <div className="main-wrap-left">
-              <Link to={"Home"} className="cursor-pointer">
-                <img
-                  className="main__row-banner"
-                  alt=""
-                  src={require("../../image/banner/nha-thong-minh.jpg")}
-                />
-              </Link>
-            </div>
-            <div className="main-top-right">
-              <div>
-                <h3 className="mb-[10px]">Ưu Điểm Vượt Trội</h3>
-                <div className="right-heading mt-[10px]">
-                  <div className="right-heading-1">
-                    <div className="right-heading-icon">
-                      <FaHandHoldingWater
-                        color="#2A2388"
-                        className="text-[24px] mr-[5px]"
-                      />
-                    </div>
-                    <p>Tiết kiệm năng lượng</p>
-                  </div>
-                  <div className="right-heading-1">
-                    <div className="right-heading-icon">
-                      <AiOutlineSetting
-                        color="#2A2388"
-                        className="text-[24px] mr-[5px]"
-                      />
-                    </div>
-                    <p>Tăng tính tiện nghi</p>
+          <div className="main-wrap-left">
+            <Link to={"Home"} className="cursor-pointer">
+              <img
+                className="main__row-banner"
+                alt=""
+                src={require("../../image/banner/giai-phap-nha-thong-minh.jpg")}
+              />
+            </Link>
+            <div className="main-left-title">
+              <h4>KHẢO SÁT – BÁO GIÁ – LẮP ĐẶT</h4>
+                <div className="w-[47%]">
+                  <h2>GIẢI PHÁP NHÀ THÔNG MINH</h2>
+                  <p>
+                    Giải pháp tự động hóa với tiện ích thông minh và hiện đại,
+                    thân thiện với người dùng. Nâng cao hiệu quả sử dụng, giá
+                    trị bền vững và lợi ích lâu dài. Giảm chi phí tối đa khi lắp
+                    đặt, tiết kiệm năng lượng khi sử dụng. Đảm bảo an toàn về
+                    điện khi hoạt động và sử dụng thiết bị.
+                  </p>
+                  <div className="social-btn">
+                    <a className="social-btn-text" href="https://chat.zalo.me/">
+                      Liên hệ tư vấn
+                    </a>
                   </div>
                 </div>
-                <div className="right-heading mt-[10px]">
-                  <div className="right-heading-1">
-                    <div className="right-heading-icon">
-                      <AiFillAlert
-                        color="#2A2388"
-                        className="text-[24px] mr-[3px]"
-                      />
-                    </div>
-                    <p>Tính an toàn cao</p>
-                  </div>
-                  <div className="right-heading-1">
-                    <div className="right-heading-icon">
-                      <AiFillPoundCircle
-                        color="#2A2388"
-                        className="text-[24px] mr-[3px]"
-                      />
-                    </div>
-                    <p>Tạo sự đẳng cấp và sang trọng</p>
-                  </div>
-                </div>
-              </div>
-              <div className="mt-4">
-                <h3>Tính Năng Chính</h3>
-                <div className="main-top-item">
-                  <div className="right-heading mt-[10px]">
-                    <div className="w-full">
-                      <div className="right-heading-1">
-                        <div className="right-heading-icon bg-[#2A2388]">
-                          <BsBroadcastPin
-                            color="#fff"
-                            className="text-[24px] mr-[5px]"
-                          />
-                        </div>
-                        <p>Điều khiển từ xa</p>
-                      </div>
-                      <div className="right-heading-1 mt-2">
-                        <div className="right-heading-icon bg-[#2A2388]">
-                          <AiOutlineBgColors
-                            color="#fff"
-                            className="text-[24px] mr-[5px]"
-                          />
-                        </div>
-                        <p>Kiểm soát tiêu thụ năng lượng</p>
-                      </div>
-                      <div className="right-heading-1 mt-2">
-                        <div className="right-heading-icon bg-[#2A2388]">
-                          <AiOutlineShake
-                            color="#fff"
-                            className="text-[24px] mr-[5px]"
-                          />
-                        </div>
-                        <p>Bảo mật</p>
-                      </div>
-                      <div className="right-heading-1 mt-2">
-                        <div className="right-heading-icon bg-[#2A2388]">
-                          <AiFillRobot
-                            color="#fff"
-                            className="text-[24px] mr-[5px]"
-                          />
-                        </div>
-                        <p>Tự động hóa nhà thông minh</p>
-                      </div>
-                    </div>
-                    <div className="w-full">
-                      <div className="right-heading-1 mt-2">
-                        <div className="right-heading-icon bg-[#2A2388]">
-                          <BsBuildingGear
-                            color="#fff"
-                            className="text-[24px] mr-[5px]"
-                          />
-                        </div>
-                        <p>Thiết lập hệ thống an ninh cho không gian</p>
-                      </div>
-                      <div className="right-heading-1 mt-2">
-                        <div className="right-heading-icon bg-[#2A2388]">
-                          <BsFillShieldLockFill
-                            color="#fff"
-                            className="text-[24px] mr-[5px]"
-                          />
-                        </div>
-                        <p> Bảo đảm an toàn cho ngôi nhà</p>
-                      </div>
-                      <div className="right-heading-1 mt-2">
-                        <div className="right-heading-icon bg-[#2A2388]">
-                          <AiFillDollarCircle
-                            color="#fff"
-                            className="text-[24px] mr-[5px]"
-                          />
-                        </div>
-                        <p>Tiết kiệm điện, hạn chế lãng phí</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="social-btn">
-                <a className="social-btn-text" href="https://chat.zalo.me/">
-                  Liên hệ tư vấn
-                </a>
-              </div>
             </div>
           </div>
         </div>

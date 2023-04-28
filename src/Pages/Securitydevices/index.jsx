@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {
   AiOutlineSetting,
@@ -9,8 +9,8 @@ import {
   AiFillDollarCircle,
   AiOutlineBgColors,
 } from "react-icons/ai";
-import { FaStar,FaGlobe,FaChromecast } from "react-icons/fa";
-import { BsBuildingGear,BsFillShieldLockFill } from "react-icons/bs";
+import { FaStar, FaGlobe, FaChromecast } from "react-icons/fa";
+import { BsBuildingGear, BsFillShieldLockFill } from "react-icons/bs";
 import products from "../../data/Security/product.json";
 import "./style.css";
 import { NextArrow, PrevArrow } from "../../Components/NextSlider";
@@ -45,20 +45,21 @@ function Securitydevices() {
   };
   return (
     <div className="Security-container" id="Security">
-     <div className="main-top-heading">
-          <div className="main-top-title ">
-            <h2>THIẾT BỊ AN NING</h2>
-            <div className="main-heading-line" />
-          </div>
-          <div className="main-wrap">
-            <div className="main-top-right">
+      <div className="main-top-heading">
+        <div className="main-top-title ">
+          <h2>THIẾT BỊ AN NING</h2>
+          <div className="main-heading-line" />
+        </div>
+        <div className="main-wrap">
+          <div className="main-top-right">
+            <div className="w-2/4">
               <div>
                 <h3 className="mb-[10px]">Ưu Điểm Vượt Trội</h3>
                 <div className="right-heading mt-[10px]">
                   <div className="right-heading-1">
                     <div className="right-heading-icon">
                       <FaStar
-                        color="#2A2388"
+                        color="#084CCC"
                         className="text-[24px] mr-[5px]"
                       />
                     </div>
@@ -67,7 +68,7 @@ function Securitydevices() {
                   <div className="right-heading-1">
                     <div className="right-heading-icon">
                       <AiOutlineSetting
-                        color="#2A2388"
+                        color="#084CCC"
                         className="text-[24px] mr-[5px]"
                       />
                     </div>
@@ -78,7 +79,7 @@ function Securitydevices() {
                   <div className="right-heading-1">
                     <div className="right-heading-icon">
                       <FaChromecast
-                        color="#2A2388"
+                        color="#084CCC"
                         className="text-[24px] mr-[3px]"
                       />
                     </div>
@@ -87,7 +88,7 @@ function Securitydevices() {
                   <div className="right-heading-1">
                     <div className="right-heading-icon">
                       <FaGlobe
-                        color="#2A2388"
+                        color="#084CCC"
                         className="text-[24px] mr-[3px]"
                       />
                     </div>
@@ -101,7 +102,7 @@ function Securitydevices() {
                   <div className="right-heading mt-[10px]">
                     <div className="w-full">
                       <div className="right-heading-1">
-                        <div className="right-heading-icon bg-[#2A2388]">
+                        <div className="right-heading-icon bg-[#084CCC]">
                           <AiFillDollarCircle
                             color="#fff"
                             className="text-[24px] mr-[5px]"
@@ -110,7 +111,7 @@ function Securitydevices() {
                         <p>Tiết kiệm điện năng</p>
                       </div>
                       <div className="right-heading-1 mt-2">
-                        <div className="right-heading-icon bg-[#2A2388]">
+                        <div className="right-heading-icon bg-[#084CCC]">
                           <AiOutlineBgColors
                             color="#fff"
                             className="text-[24px] mr-[5px]"
@@ -119,7 +120,7 @@ function Securitydevices() {
                         <p>Đa chức năng</p>
                       </div>
                       <div className="right-heading-1 mt-2">
-                        <div className="right-heading-icon bg-[#2A2388]">
+                        <div className="right-heading-icon bg-[#084CCC]">
                           <AiOutlineShake
                             color="#fff"
                             className="text-[24px] mr-[5px]"
@@ -128,7 +129,7 @@ function Securitydevices() {
                         <p>Kết nối thông minh</p>
                       </div>
                       <div className="right-heading-1 mt-2">
-                        <div className="right-heading-icon bg-[#2A2388]">
+                        <div className="right-heading-icon bg-[#084CCC]">
                           <AiFillRobot
                             color="#fff"
                             className="text-[24px] mr-[5px]"
@@ -139,7 +140,7 @@ function Securitydevices() {
                     </div>
                     <div className="w-full">
                       <div className="right-heading-1 mt-2">
-                        <div className="right-heading-icon bg-[#2A2388]">
+                        <div className="right-heading-icon bg-[#084CCC]">
                           <BsBuildingGear
                             color="#fff"
                             className="text-[24px] mr-[5px]"
@@ -148,7 +149,7 @@ function Securitydevices() {
                         <p>Khả năng hoạt động ổn định</p>
                       </div>
                       <div className="right-heading-1 mt-2">
-                        <div className="right-heading-icon bg-[#2A2388]">
+                        <div className="right-heading-icon bg-[#084CCC]">
                           <BsFillShieldLockFill
                             color="#fff"
                             className="text-[24px] mr-[5px]"
@@ -157,7 +158,7 @@ function Securitydevices() {
                         <p> Bảo đảm an toàn cho ngôi nhà</p>
                       </div>
                       <div className="right-heading-1 mt-2">
-                        <div className="right-heading-icon bg-[#2A2388]">
+                        <div className="right-heading-icon bg-[#084CCC]">
                           <AiFillDollarCircle
                             color="#fff"
                             className="text-[24px] mr-[5px]"
@@ -175,17 +176,18 @@ function Securitydevices() {
                 </a>
               </div>
             </div>
-            <div className="main-wrap-left">
-              <Link to={"Home"} className="cursor-pointer">
-                <img
-                  className="main__row-banner"
-                  alt=""
-                  src={require("../../image/banner/thiet-bi-an-ning.jpg")}
-                />
-              </Link>
-            </div>
+          </div>
+          <div className="main-wrap-left ">
+            <Link to={"Home"} className="cursor-pointer">
+              <img
+                className="main__row-banner"
+                alt=""
+                src={require("../../image/banner/thiet-bi-an-ning.png")}
+              />
+            </Link>
           </div>
         </div>
+      </div>
       <div className="w-full mt-[20px] mb-[30px]">
         <div className="main-heading relative">
           <h2 className="main-heading-col leading-loose">
@@ -213,11 +215,11 @@ function Securitydevices() {
               </div>
               <div className="Security-wrap-description mt-[10px] pl-[15px] pr-[15px]">
                 <div className="relative">
-                  <h2 className="Security-wrap-heading">THÔNG SỐ KỸ THUẬT</h2>
+                  <h2 className="Security-wrap-heading">Thông số kỹ thuật</h2>
                 </div>
                 <div className="Security-wrap-col-info">
                   <div className="Security-specifications">
-                    {item.specifications.map((list,index) => {
+                    {item.specifications.map((list, index) => {
                       return (
                         <ul key={index} className="Security-wrap-item">
                           <li>{list}</li>
@@ -226,7 +228,7 @@ function Securitydevices() {
                     })}
                   </div>
                   <div className="Security-specifications">
-                    {item.description.map((item,index) => {
+                    {item.description.map((item, index) => {
                       return (
                         <ul key={index} className="Security-item">
                           <li className="Security-item-list">{item}</li>

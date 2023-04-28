@@ -75,7 +75,7 @@
   width: 100%;
   max-width: 200px;
   margin: auto 0;
-  background-color: #4b7ef8;
+  background-color: #f59f4a;
   border-radius: 10px;
   text-align: center;
   cursor: pointer;
@@ -88,10 +88,10 @@
   font-size: 15px;
   font-weight: bold;
   text-align: center;
-  text-shadow: rgb(4, 41, 110) 1px 1px 1px;
 }
 .nav-hotline:hover {
-  background-color: #1a59d1;
+  background-color: rgb(223, 143, 6);
+  transform: scale(1.1);
 }
 .nav-list{
   align-items: center;

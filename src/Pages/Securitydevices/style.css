@@ -113,8 +113,8 @@
   width: calc(50% - 10px);
 }
 .Security-wrap-item li {
-  border: 1px solid #e0e0e0;
-  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  background-color: #e0e0e0;
   height: 30px;
   margin-bottom: 5px;
   color: #000;
